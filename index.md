@@ -274,18 +274,18 @@ title: Portal de demos – Victor Fuente
       <article class="card">
         <div class="card-header">
           <div>
-            <h3 class="card-title">Colibrí – Portal de prototipos</h3>
+            <h3 class="card-title">Control de Licencias – Portal de prototipos</h3>
             <p class="card-meta">Pruebas de proyectos personales y experimentales</p>
           </div>
           <span class="card-tag">Prototipo</span>
         </div>
         <p class="card-body">
-          Espacio para demos de proyectos personales (economía, permacultura, visualización de datos, etc.). 
+          Espacio para demos de proyectos Power BI (Control de Licencias). 
           Se utilizará de forma ocasional para mostrar ideas en desarrollo.
         </p>
         <div class="card-footer">
           <!-- PUEDES DEJARLO SIN LINK O CON OTRO NGROK CUANDO LO USES -->
-          <a class="btn btn-ghost" href="#" onclick="alert('Esta demo no está disponible en este momento.'); return false;">
+          <a class="btn btn-ghost" href="https://app.powerbi.com/view?r=eyJrIjoiM2I5NjJmZjItNzA3NS00ODRmLWFiYjItMzhkNGM5ZGEzYmFlIiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9" onclick="alert('Esta demo no está disponible en este momento.'); return false;">
             Demo no disponible
           </a>
         </div>
