@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Portal de demos – Victor Fuente
+description: Acceso único a demos web y paneles Power BI.
 ---
 
 <style>
@@ -41,7 +42,7 @@ title: Portal de demos – Victor Fuente
   .hero-subtitle {
     font-size: 1rem;
     color: var(--text-muted);
-    max-width: 36rem;
+    max-width: 40rem;
   }
 
   .hero-meta {
@@ -223,126 +224,156 @@ title: Portal de demos – Victor Fuente
     <div class="badge">
       <span>Portal de demos</span>
     </div>
-    <h1 class="hero-title">Entorno de pruebas de Victor Fuente</h1>
+    <h1 class="hero-title">Entorno de demos de Victor Fuente</h1>
     <p class="hero-subtitle">
-      Esta página funciona como un acceso único a las demos que se ejecutan desde mi entorno de desarrollo. 
-      Los enlaces pueden cambiar (ngrok, túneles, etc.), pero este portal se mantiene estable.
+      Esta página funciona como un acceso único a las demos que se ejecutan desde mi entorno de desarrollo
+      (Ngrok / Web) y a los paneles de Power BI utilizados en la Dirección de Educación Secundaria.
+      Los enlaces de pruebas pueden cambiar, pero este portal se mantiene estable.
     </p>
     <p class="hero-meta">
-      👉 Comparte solo esta URL: <strong>vicfueagui.github.io</strong>.  
-      Desde aquí podrás entrar a cada demo cuando esté disponible.
+      👉 Comparte solo esta URL: <strong>https://vicfueagui.github.io</strong>.  
+      Desde aquí se puede entrar a cada demo cuando esté disponible.
     </p>
   </section>
 
   <section>
-    <h2 class="section-title">Demos en vivo</h2>
+    <h2 class="section-title">Demos Web (Ngrok)</h2>
     <p class="section-description">
-      Selecciona el proyecto que quieras revisar. Si algún enlace marca error, es probable que 
-      el servidor de pruebas no esté encendido en ese momento.
+      Acceso a sistemas web de prueba utilizados en la Dirección de Secundarias, área de Asesores Especializados.
+      El enlace puede cambiar según la sesión de Ngrok; si marca error, es probable que el servidor local no esté activo.
     </p>
 
     <div class="cards">
-
-      <!-- PROYECTO 1 -->
+      <!-- PROYECTO NGROK -->
       <article class="card">
         <div class="card-header">
           <div>
-            <h3 class="card-title">Secundarias – SEGEY / Jurídico</h3>
-            <p class="card-meta">Sistema de seguimiento de trámites y licencias</p>
+            <h3 class="card-title">Sistema WEB – Secundarias (Ngrok)</h3>
+            <p class="card-meta">
+              Control de Licencias, Protocolos, Control Interno y herramientas de cálculo de fechas.
+            </p>
           </div>
-          <span class="card-tag">Demo principal</span>
+          <span class="card-tag">Django / Local</span>
         </div>
         <p class="card-body">
-          Portal interno para seguimiento de trámites, licencias y control interno en el nivel de secundarias.
-          Usa este botón cuando te indique que la demo está activa.
+          Proyecto web para la Dirección de Secundarias, área de Asesores Especializados: gestión de licencias,
+          control de protocolos, control interno y algunas herramientas de apoyo (cálculo de fechas, etc.).
         </p>
         <div class="card-footer">
-          <!-- AQUÍ SOLO CAMBIAS LA URL DE NGROK CUANDO SEA NECESARIO -->
+          <!-- URL ACTUAL DE NGROK (SE ACTUALIZA CUANDO CAMBIE) -->
           <a class="btn btn-primary" href="https://e7e396483aef.ngrok-free.app/" target="_blank" rel="noopener noreferrer">
-            Entrar a la demo
+            Abrir sistema (Ngrok)
           </a>
         </div>
         <p class="card-meta">
           <span class="status-text">
             <span class="status-dot offline"></span>
-            Estado: requiere que el servidor de pruebas esté encendido.
+            Estado: requiere que el servidor de pruebas local y el túnel Ngrok estén activos.
           </span>
         </p>
       </article>
-
-      <!-- PROYECTO 2 (OPCIONAL) -->
-      <article class="card">
-        <div class="card-header">
-          <div>
-            <h3 class="card-title">Control de Licencias – Portal de prototipos</h3>
-            <p class="card-meta">Pruebas de proyectos personales y experimentales</p>
-          </div>
-          <span class="card-tag">Prototipo</span>
-        </div>
-        <p class="card-body">
-          Espacio para demos de proyectos Power BI (Control de Licencias). 
-          Se utilizará de forma ocasional para mostrar ideas en desarrollo.
-        </p>
-        <div class="card-footer">
-          <!-- PUEDES DEJARLO SIN LINK O CON OTRO NGROK CUANDO LO USES -->
-          <a class="btn btn-ghost" href="https://app.powerbi.com/view?r=eyJrIjoiM2I5NjJmZjItNzA3NS00ODRmLWFiYjItMzhkNGM5ZGEzYmFlIiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9"  target="_blank" rel="noopener noreferrer">
-            Entrar a la demo
-          </a>
-        </div>
-        <p class="card-meta">
-          <span class="status-text">
-            <span class="status-dot offline"></span>
-            Estado: requiere que el servidor de pruebas esté encendido.
-          </span>
-        </p>
-      </article>
-
-      <!-- PROYECTO 3 (PUEDES DUPLICAR ESTE BLOQUE PARA MÁS PROYECTOS) -->
-      <article class="card">
-        <div class="card-header">
-          <div>
-            <h3 class="card-title">Otro proyecto</h3>
-            <p class="card-meta">Descripción breve del sistema o prueba</p>
-          </div>
-          <span class="card-tag">Opcional</span>
-        </div>
-        <p class="card-body">
-          Usa este bloque para agregar nuevos proyectos. Solo duplica este artículo y actualiza el título, 
-          la descripción y el enlace.
-        </p>
-        <div class="card-footer">
-          <a class="btn btn-ghost" href="#" onclick="alert('Demo no configurada aún.'); return false;">
-            Configurar más adelante
-          </a>
-        </div>
-      </article>
-
     </div>
 
     <div class="hint">
       <strong>Nota para el administrador (tú):</strong><br>
-      Cada vez que se genere un nuevo URL de ngrok, solo entra a este repositorio 
-      (<code>vicfueagui.github.io</code>), edita el enlace del botón 
-      <code>href="https://TU-LINK-NGROK-AQUI"</code>, guarda y haz commit.  
+      Cuando Ngrok genere un nuevo enlace, edita este archivo y reemplaza la URL actual
+      <code>https://e7e396483aef.ngrok-free.app/</code> por el nuevo enlace.  
       No necesitas volver a compartir ninguna liga, solo esta página.
     </div>
   </section>
 
   <section>
-    <h2 class="section-title">Información técnica</h2>
+    <h2 class="section-title">Paneles Power BI</h2>
     <p class="section-description">
-      Este portal está construido con GitHub Pages y Jekyll (theme minimal). 
-      Se usa únicamente como entrada estable a distintos entornos de desarrollo.
+      Paneles de análisis y seguimiento en Power BI para los procesos de la Dirección de Educación Secundaria.
+      Estos enlaces se encuentran alojados en el servicio de Power BI.
     </p>
-    <ul class="card-body" style="padding-left: 1.1rem;">
-      <li>Hosting: GitHub Pages (<code>vicfueagui.github.io</code>).</li>
-      <li>Uso: redirigir a servidores de pruebas (ngrok, túneles, etc.).</li>
-      <li>Actualización: mediante edición rápida del archivo <code>index.md</code>.</li>
-    </ul>
+
+    <div class="cards">
+
+      <!-- PANEL LICENCIAS -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Panel para Licencias</h3>
+            <p class="card-meta">Análisis y seguimiento de licencias del personal.</p>
+          </div>
+          <span class="card-tag">Power BI</span>
+        </div>
+        <p class="card-body">
+          Visualización de indicadores clave relacionados con licencias del personal en el nivel de secundarias.
+          Útil para revisar tendencias, conteos y distribución de licencias.
+        </p>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiM2I5NjJmZjItNzA3NS00ODRmLWFiYjItMzhkNGM5ZGEzYmFlIiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9" target="_blank" rel="noopener noreferrer">
+            Ver panel en Power BI
+          </a>
+        </div>
+        <p class="card-meta">
+          <span class="status-text">
+            <span class="status-dot"></span>
+            Estado: en línea (disponible mientras el enlace público de Power BI esté vigente).
+          </span>
+        </p>
+      </article>
+
+      <!-- PANEL CONTROL DE CORRESPONDENCIA -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Panel para Control de Correspondencia</h3>
+            <p class="card-meta">Seguimiento de oficios, entradas y salidas.</p>
+          </div>
+          <span class="card-tag">Power BI</span>
+        </div>
+        <p class="card-body">
+          Panel para monitorear la correspondencia (oficios recibidos y enviados), tiempos de respuesta
+          y volumen de documentos gestionados por el área.
+        </p>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiMWYwMTQ5ZjYtMTMyNi00NGIxLTk5YzEtOWEzMzk1MDYzYjU0IiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9" target="_blank" rel="noopener noreferrer">
+            Ver panel en Power BI
+          </a>
+        </div>
+        <p class="card-meta">
+          <span class="status-text">
+            <span class="status-dot"></span>
+            Estado: en línea (disponible mientras el enlace público de Power BI esté vigente).
+          </span>
+        </p>
+      </article>
+
+      <!-- PANEL CONTROL DE ACUSES -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Panel para Control de Acuses</h3>
+            <p class="card-meta">Control de acuses y evidencia de entrega.</p>
+          </div>
+          <span class="card-tag">Power BI</span>
+        </div>
+        <p class="card-body">
+          Panel para revisar y controlar los acuses de recibo de documentación, asegurando el seguimiento
+          y la trazabilidad de los documentos entregados.
+        </p>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiMjlkOGNiYzYtNjgxOS00ZDc4LWE0NjAtMTFjMmY3M2YxYmM0IiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9" target="_blank" rel="noopener noreferrer">
+            Ver panel en Power BI
+          </a>
+        </div>
+        <p class="card-meta">
+          <span class="status-text">
+            <span class="status-dot"></span>
+            Estado: en línea (disponible mientras el enlace público de Power BI esté vigente).
+          </span>
+        </p>
+      </article>
+
+    </div>
   </section>
 
   <p class="footer-note">
-    Última actualización: <!-- puedes rellenar a mano --> Enero 2026.  
-    Si algún enlace no responde, por favor avisa al administrador para que encienda el servidor de pruebas.
+    Última actualización: <!-- puedes rellenar a mano, por ejemplo: --> Enero 2026.  
+    Si algún enlace no responde, por favor avisa al administrador para verificar el servicio (Ngrok o Power BI).
   </p>
 </div>
