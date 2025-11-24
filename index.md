@@ -285,8 +285,8 @@ title: Portal de demos – Victor Fuente
         </p>
         <div class="card-footer">
           <!-- PUEDES DEJARLO SIN LINK O CON OTRO NGROK CUANDO LO USES -->
-          <a class="btn btn-ghost" href="https://app.powerbi.com/view?r=eyJrIjoiM2I5NjJmZjItNzA3NS00ODRmLWFiYjItMzhkNGM5ZGEzYmFlIiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9" onclick="alert('Esta demo no está disponible en este momento.'); return false;">
-            Demo no disponible
+          <a class="btn btn-ghost" href="https://app.powerbi.com/view?          r=eyJrIjoiM2I5NjJmZjItNzA3NS00ODRmLWFiYjItMzhkNGM5ZGEzYmFlIiwidCI6IjE5MTAzOGU0LWFhYzMtNDM2MS05OGViLWQ1ODBlMzY4YTZhZiJ9"  target="_blank" rel="noopener noreferrer">
+            Entrar a la demo
           </a>
         </div>
         <p class="card-meta">
